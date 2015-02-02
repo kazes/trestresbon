@@ -5,10 +5,9 @@
 .line:after{clear:both;}
 .line{*zoom:1;}
 .unit{float:left;}/*a 'unit' is a floating block in the 'line'*/
-.size1of1{float:none;}
+.size1of1{float:none; width: 100%;}
 .size1of2{width:50%;}
 .size1of3{width:33.33333%;}
-.msie7 .size1of3{width:33.2%;}
 .size2of3{width:66.66666%;}
 .size1of4{width:25%;}
 .size3of4{width:75%;}
@@ -18,7 +17,7 @@
 .size4of5{width:80%;}
 .last-unit{float:none;display:block;display:table-cell;width:9999em;*width:auto;*zoom:1;_position:relative;_left:-3px;_margin-right:-3px;}
 
-.ofh { overflow:hidden;zoom:1; }/*in case you don't want to use 'line' method*/
+.ofh { overflow:hidden; zoom:1; }/*in case you don't want to use 'line' method*/
 
 /* space : https://github.com/stubbornella/oocss/blob/master/core/spacing/space.css*/
 /** 
@@ -41,6 +40,7 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 .ptl,.pvl,.pal       { padding-top:15px }
 .ptxl,.pvxl,.paxl    { padding-top:20px }
 .ptxxl,.pvxxl,.paxxl { padding-top:25px }
+.pth,.pvh,.pah       { padding-top:30px }
 .prn,.phn,.pan       { padding-right:0px }
 .prxs,.phxs,.paxs    { padding-right:3px }
 .prs,.phs,.pas       { padding-right:5px }
@@ -48,6 +48,7 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 .prl,.phl,.pal       { padding-right:15px }
 .prxl,.phxl,.paxl    { padding-right:20px }
 .prxxl,.phxxl,.paxxl { padding-right:25px }
+.prh,.phh,.pah       { padding-right:30px }
 .pbn,.pvn,.pan       { padding-bottom:0px }  
 .pbs,.pvs,.pas       { padding-bottom:5px }
 .pbxs,.pvxs,.paxs    { padding-bottom:3px }
@@ -55,6 +56,7 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 .pbl,.pvl,.pal       { padding-bottom:15px }
 .pbxl,.pvxl,.paxl    { padding-bottom:20px }
 .pbxxl,.pvxxl,.paxxl { padding-bottom:25px }
+.pbh,.pvh,.pah       { padding-bottom:30px }
 .pln,.phn,.pan       { padding-left:0px }
 .plxs,.phxs,.paxs    { padding-left:3px }
 .pls,.phs,.pas       { padding-left:5px }
@@ -62,6 +64,7 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 .pll,.phl,.pal       { padding-left:15px }
 .plxl,.phxl,.paxl    { padding-left:20px }
 .plxxl,.phxxl,.paxxl { padding-left:25px }
+.plh,.phh,.pah       { padding-left:30px }
 .mtn,.mvn,.man       { margin-top:0px }
 .mtxs,.mvxs,.maxs    { margin-top:3px }
 .mts,.mvs,.mas       { margin-top:5px }
@@ -91,36 +94,38 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 .mlxl,.mhxl,.maxl    { margin-left:20px }
 .mlxxl,.mhxxl,.maxxl { margin-left:25px }
 
-
 /* inline module : an inline-block container with an optional block content (in-imod) */
 .imod, .in-imod {}
-.imod {display:-moz-inline-stack;display:inline-block;!display:inline;!zoom:1;}/* old FF ; recent browser ; IE6/7 inline-block=inline+zoom */
+.imod {display:-moz-inline-stack;display:inline-block;_display:inline;_zoom:1;}/* old FF ; recent browser ; IE6/7 inline-block=inline+zoom */
 .imod-tab-large { display:block; float:left; }
-.imod .in-imod{display:block;!display:inline;!zoom:1;}
-.imod span.in-imod,.imod a.in-imod,.imod label.in-imod{!display:block;}
+.imod .in-imod{display:block;_display:inline;_zoom:1;}
+.imod span.in-imod,.imod a.in-imod,.imod label.in-imod{_display:block;}
 .imod input,.imod button,.imod textarea{background:none;border:none;font:inherit;padding:0;color:inherit;-moz-box-sizing:content-box;overflow:visible;}
 
-
-/* other */
+/* other helpers */
 .tal  { text-align:left; }
 .tar  { text-align:right; }
 .tac  { text-align:center; }
-.ma   { margin:0 auto; }
+.posa { position:absolute; }
 .posr { position:relative; }
 .vab  { vertical-align:bottom; }
 .vam  { vertical-align:middle; }
 .vat  { vertical-align:top; }
-.din  { display:inline; }
-.ttu  { text-transform:uppercase; }
-.tdu  { text-decoration:underline; }
+.di   { display:inline; }
+.dib  { display:inline-block; }
 .db   { display:block; }
 .dn   { display:none; }
-.fr   { float:right; }
-.w100 { width:100%; }
+.dt   { display: table; }
+.dtc  { display: table-cell; }
+.ttu  { text-transform:uppercase; }
+.tdu  { text-decoration:underline; }
+.left   { float:left; }
+.right  { float:right; }
+.full-w { width: 100%; }
+.full-h { height: 100%; }
+.center { margin-left: auto; margin-right: auto; }
 .bg-x-center { background-position:center 0; }
 .bg-y-center { background-position:0 center; }
-.clear {
-     clear:both;
-     height:1px;
-}
+.clear { clear:both; }
 .pointer { cursor:pointer; }
+.no-cursor { cursor: default; }
