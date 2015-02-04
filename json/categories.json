@@ -1,0 +1,10 @@
+{
+    "categories": [
+        {
+            "id":0, "name":"Commerce de bouche",
+            "id":1, "name":"Table de la semaine",
+            "id":2, "name":"Street-Food",
+            "id":3, "name":"Bec Sucré"
+        }
+    ]
+}

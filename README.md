@@ -1,4 +1,4 @@
-Les adresses de l'émission Très Très Bon (Paris Première)
+Les adresses de l'émission Très Très Bon
 ========
 
 Une appli web pour rechercher les bonnes adresses de l'émission !

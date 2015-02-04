@@ -1,0 +1,40 @@
+{
+    "places": [
+        {
+            "name": "TASCA",
+            "street": "37, rue du Roi de Sicile",
+            "city": "Paris",
+            "zip": "75004",
+            "category": 0,
+            "season": "1",
+            "episode": "1"
+        },
+        {
+            "name": "NODAIWA",
+            "street": "272 Rue Saint Honoré",
+            "city": "Paris",
+            "zip": "75001",
+            "category": 0,
+            "season": "1",
+            "episode": "1"
+        },
+        {
+            "name": "OFFICINA SCHENATTI",
+            "street": "15 Rue Frédéric Sauton",
+            "city": "Paris",
+            "zip": "75005",
+            "category": 1,
+            "season": "1",
+            "episode": "1"
+        },
+        {
+            "name": "LES DESERTEURS",
+            "street": "46 Rue Trousseau",
+            "city": "Paris",
+            "zip": "75011",
+            "category": 2,
+            "season": "1",
+            "episode": "1"
+        }
+    ]
+}

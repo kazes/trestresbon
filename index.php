@@ -10,7 +10,9 @@
         
         <div id="page">
 
+            <div id="places">
 
+            </div>
 
         </div><!-- #page -->
         
