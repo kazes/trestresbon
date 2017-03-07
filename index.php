@@ -1,6 +1,7 @@
 <?php include('inc/html.inc.php'); ?>
 <head>
     <?php include('inc/head.inc.php'); ?>
+    <script src="https://unpkg.com/vue"></script>
 </head>
 
 <body>
@@ -9,7 +10,9 @@
         <?php include('inc/header.inc.php'); ?>
         
         <div id="page">
-
+            <div id="app">
+                {{ message }}
+            </div>
             <div id="places">
 
             </div>
